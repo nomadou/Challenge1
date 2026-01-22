@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Showdown")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bf82624c686116d0bc5ddc718f2159961c34b68")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bb9a9f4f04747647677ff484f8fb1420a127c4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Showdown")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Showdown")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
