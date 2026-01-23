@@ -5,7 +5,7 @@ namespace Showdown;
 
 public class Deck
 {
-    private List<Card> cards;
+    public List<Card> cards;
 
     public Deck()
     {

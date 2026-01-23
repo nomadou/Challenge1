@@ -1,0 +1,15 @@
+D:\Test_Project\Waterball\Challenge1\Showdown\bin\Debug\net10.0\Showdown.exe
+D:\Test_Project\Waterball\Challenge1\Showdown\bin\Debug\net10.0\Showdown.deps.json
+D:\Test_Project\Waterball\Challenge1\Showdown\bin\Debug\net10.0\Showdown.runtimeconfig.json
+D:\Test_Project\Waterball\Challenge1\Showdown\bin\Debug\net10.0\Showdown.dll
+D:\Test_Project\Waterball\Challenge1\Showdown\bin\Debug\net10.0\Showdown.pdb
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.AssemblyInfoInputs.cache
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.AssemblyInfo.cs
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.csproj.CoreCompileInputs.cache
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.sourcelink.json
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.dll
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\refint\Showdown.dll
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.pdb
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\Showdown.genruntimeconfig.cache
+D:\Test_Project\Waterball\Challenge1\Showdown\obj\Debug\net10.0\ref\Showdown.dll

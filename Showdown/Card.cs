@@ -5,7 +5,7 @@ namespace Showdown;
 public class Card
 {
     private int _rank;
-    private string _suit;
+    private string? _suit;
 
     public Card(int rank, string suit)
     {
@@ -28,7 +28,7 @@ public class Card
 
     public string Suit
     {
-        get { return _suit; }
+        get { return _suit!; }
         private set
         {
             if (value != "Hearts" && value != "Diamonds" && value != "Clubs" && value != "Spades")
@@ -37,5 +37,18 @@ public class Card
             }
             _suit = value;
         }
+    }
+
+    public override string ToString()
+    {
+        string rankStr = Rank switch
+        {
+            1 => "A",
+            11 => "J",
+            12 => "Q",
+            13 => "K",
+            _ => Rank.ToString()
+        };
+        return $"{rankStr} of {_suit}";
     }
 }
