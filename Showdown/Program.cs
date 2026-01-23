@@ -7,7 +7,7 @@ Console.WriteLine("Hello, World!");
 Deck deck = new Deck();
 deck.Shuffle();
 
-foreach (Card card in deck.cards)
+foreach (Card card in deck.Cards)
 {
     Console.WriteLine(card);
 }
