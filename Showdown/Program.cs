@@ -1,14 +1,16 @@
 ﻿using Showdown;
 using System;
 
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-Deck deck = new Deck();
-deck.Shuffle();
-
-foreach (Card card in deck.Cards)
+// 創建玩家
+List<Player> players = new List<Player>
 {
-    Console.WriteLine(card);
-}
+    new HumanPlayer("P1"),
+    new AIPlayer("P2"),
+    new AIPlayer("P3"),
+    new AIPlayer("P4")
+};
+
+// 創建遊戲並開始
+Game game = new Game(players);
+game.Start();
 

@@ -9,6 +9,8 @@ public class Deck
 
     public IReadOnlyList<Card> Cards => cards;
 
+    public int CardCount => cards.Count;
+
     public Deck()
     {
         cards = new List<Card>();
@@ -33,5 +35,17 @@ public class Deck
             cards[i] = cards[j];
             cards[j] = temp;
         }
+    }
+
+    public Card DrawCard()
+    {
+        if (cards.Count == 0)
+        {
+            throw new InvalidOperationException("牌庫中沒有牌了！");
+        }
+
+        Card card = cards[0];
+        cards.RemoveAt(0);
+        return card;
     }
 }
