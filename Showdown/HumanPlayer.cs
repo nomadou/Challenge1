@@ -34,9 +34,17 @@ public class HumanPlayer : Player
         while (true)
         {
             ShowHand();
-            Console.Write($"\n{Name}，請選擇要打第幾張牌 (1-{HandCount}): ");
+            Console.Write($"\n{Name}，請選擇要打第幾張牌 (1-{HandCount}) 或輸入'跳過': ");
             
-            if (int.TryParse(Console.ReadLine(), out int cardIndex) && cardIndex >= 1 && cardIndex <= HandCount)
+            string? input = Console.ReadLine();
+            
+            if (input?.ToLower() == "跳過")
+            {
+                Console.WriteLine($"{Name} 選擇跳過這一輪。");
+                return null!;
+            }
+            
+            if (int.TryParse(input, out int cardIndex) && cardIndex >= 1 && cardIndex <= HandCount)
             {
                 Card card = GetCardAt(cardIndex - 1);
                 RemoveCardAt(cardIndex - 1);
@@ -49,15 +57,44 @@ public class HumanPlayer : Player
         }
     }
 
+    public override bool WantToExchange()
+    {
+        if (HasExchanged)
+        {
+            return false;
+        }
+
+        Console.Write($"\n{Name}，要使用換牌特權嗎？(y/n): ");
+        string? response = Console.ReadLine();
+        return response?.ToLower() == "y";
+    }
+
+    public int SelectPlayerToExchange(List<Player> otherPlayers)
+    {
+        Console.WriteLine($"\n{Name}，選擇要和哪個玩家換牌:");
+        for (int i = 0; i < otherPlayers.Count; i++)
+        {
+            Console.WriteLine($"  [{i + 1}] {otherPlayers[i].Name}");
+        }
+        Console.Write("請選擇 (輸入編號): ");
+        
+        while (true)
+        {
+            if (int.TryParse(Console.ReadLine(), out int choice) && choice >= 1 && choice <= otherPlayers.Count)
+            {
+                return choice - 1;
+            }
+            Console.WriteLine("輸入無效，請重新選擇。");
+        }
+    }
+
     private Card GetCardAt(int index)
     {
-        // 在 Player 中會新增此 protected 方法
         return GetCard(index);
     }
 
     private void RemoveCardAt(int index)
     {
-        // 在 Player 中會新增此 protected 方法
         RemoveCard(index);
     }
 }
